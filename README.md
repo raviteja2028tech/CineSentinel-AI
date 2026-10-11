@@ -184,6 +184,39 @@ Then open <http://localhost:8501>.
 - Run commands from the project root so Streamlit picks up the theme in
   `.streamlit\config.toml` and the images in `background-img\`.
 
+## Deploying to Streamlit Community Cloud
+
+The app must run on **Python 3.11**. Community Cloud picks its own default
+Python version unless told otherwise, and on Python 3.14 the build fails
+while installing dependencies (for example `RequiredDependencyException:
+The headers or library files could not be found for zlib` from Pillow),
+because the pinned packages have no prebuilt wheels for that version.
+
+The Python version is a setting of the deployed app, not something a file
+in this repository can control, and it cannot be changed after deployment.
+If the app was deployed with the wrong version, delete it and deploy again:
+
+1. In <https://share.streamlit.io>, note the app's URL (subdomain), then
+   delete the app from its menu.
+2. Click **Create app** and choose this repository.
+   - Branch: `main`
+   - Main file path: `app/Home.py`
+   - App URL: reuse the same subdomain if you want the old link to work.
+3. Open **Advanced settings**, set **Python version** to **3.11**, and save.
+   No secrets are needed.
+4. Click **Deploy**.
+
+What to expect:
+
+- The first start takes a few minutes: it installs the dependencies, and
+  the app downloads the NLTK word lists (about 40 MB) on first use.
+- No `packages.txt` is needed. On Python 3.11 every dependency installs
+  from a prebuilt wheel.
+- The trained models are in the repository, so nothing is trained or
+  downloaded apart from the NLTK data.
+- Loading all six models and making a prediction used about 470 MB of
+  memory when measured locally.
+
 ## Dataset setup
 
 Only needed to retrain the models or run the experiments. The dataset

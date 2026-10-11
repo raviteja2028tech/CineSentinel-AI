@@ -1,4 +1,13 @@
-# CineSentinel AI - dependency pins validated for Windows + Python 3.11
+# CineSentinel AI - runtime dependencies.
+#
+# REQUIRES PYTHON 3.11. These pins have prebuilt wheels for Python 3.11
+# (Windows and Linux); on Python 3.14 they do not, so pip tries to compile
+# pandas, NumPy, Pillow and others from source and the install fails.
+# On Streamlit Community Cloud, choose Python 3.11 under "Advanced settings"
+# when deploying - see "Deploying to Streamlit Community Cloud" in README.md.
+#
+# Do not loosen scikit-learn or numpy: the saved models in models/ were
+# pickled with exactly these versions.
 pandas==2.2.3
 numpy==2.1.3
 scipy==1.14.1
