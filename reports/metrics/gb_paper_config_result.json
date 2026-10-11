@@ -1,0 +1,68 @@
+{
+  "description": "Gradient Boosting with the reference paper's settings (100 trees), evaluated once on the official test split. Kept for reference; the application uses the validation-selected configuration.",
+  "training": {
+    "n_estimators": 100,
+    "criterion": "squared_error",
+    "learning_rate": 0.1,
+    "min_samples_split": 2,
+    "random_state": 42,
+    "train_seconds": 246.34162044525146
+  },
+  "test_metrics": {
+    "confusion_matrix": {
+      "labels": [
+        "positive",
+        "negative"
+      ],
+      "matrix": [
+        [
+          10758,
+          1742
+        ],
+        [
+          2990,
+          9510
+        ]
+      ],
+      "tp": 10758,
+      "fn": 1742,
+      "fp": 2990,
+      "tn": 9510
+    },
+    "positive_precision": 0.782513820192028,
+    "negative_precision": 0.8451830785638109,
+    "accuracy": 0.81072,
+    "classification_report": {
+      "positive": {
+        "precision": 0.782513820192028,
+        "recall": 0.86064,
+        "f1-score": 0.819719597683633,
+        "support": 12500.0
+      },
+      "negative": {
+        "precision": 0.8451830785638109,
+        "recall": 0.7608,
+        "f1-score": 0.8007746716066015,
+        "support": 12500.0
+      },
+      "accuracy": 0.81072,
+      "macro avg": {
+        "precision": 0.8138484493779194,
+        "recall": 0.81072,
+        "f1-score": 0.8102471346451172,
+        "support": 25000.0
+      },
+      "weighted avg": {
+        "precision": 0.8138484493779193,
+        "recall": 0.81072,
+        "f1-score": 0.8102471346451173,
+        "support": 25000.0
+      }
+    },
+    "recall": 0.86064,
+    "specificity": 0.7608,
+    "f1": 0.819719597683633,
+    "roc_auc": 0.8996893024,
+    "predict_seconds": 0.11365199089050293
+  }
+}

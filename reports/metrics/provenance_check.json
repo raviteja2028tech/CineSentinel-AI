@@ -1,0 +1,21 @@
+{
+  "tarball_bytes": 84125825,
+  "tarball_sha256": "c40f74a18d3b61f90feba1e17730e0d38e8b97c05fde7008942e91923d1658fe",
+  "splits": {
+    "train": {
+      "project_rows": 25000,
+      "official_rows": 25000,
+      "rows_only_in_project": 0,
+      "rows_only_in_official": 0,
+      "identical": true
+    },
+    "test": {
+      "project_rows": 25000,
+      "official_rows": 25000,
+      "rows_only_in_project": 0,
+      "rows_only_in_official": 0,
+      "identical": true
+    }
+  },
+  "all_identical": true
+}

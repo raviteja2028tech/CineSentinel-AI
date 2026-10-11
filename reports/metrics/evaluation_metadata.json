@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-10-11T08:08:38+00:00",
+  "test_rows": 25000,
+  "n_features": 50000,
+  "positive_label": "positive",
+  "negative_label": "negative",
+  "averaging": "precision, recall and f1 are for the positive class; negative_precision and specificity are for the negative class; macro_f1 is the unweighted mean of the two per-class F1 scores",
+  "timing_note": "predict_seconds is one batch prediction over the whole test matrix on this machine; it excludes text cleaning and vectorization",
+  "models_evaluated": [
+    "logistic_regression",
+    "linear_svm",
+    "multinomial_nb",
+    "random_forest",
+    "gradient_boosting",
+    "mlp_neural_net"
+  ],
+  "best_model_by_accuracy": "mlp_neural_net",
+  "python": "3.11.9",
+  "scikit_learn": "1.5.2"
+}

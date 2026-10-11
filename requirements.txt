@@ -1,0 +1,12 @@
+# CineSentinel AI - dependency pins validated for Windows + Python 3.11
+pandas==2.2.3
+numpy==2.1.3
+scipy==1.14.1
+scikit-learn==1.5.2
+joblib==1.4.2
+nltk==3.9.1
+streamlit==1.39.0
+plotly==5.24.1
+requests==2.32.3
+tqdm==4.66.5
+pytest==8.3.3

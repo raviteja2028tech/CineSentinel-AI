@@ -1,0 +1,51 @@
+{
+  "logistic_regression": {
+    "best_C": 1.0,
+    "cv_accuracy": 0.8890000476428944,
+    "train_seconds": 8.384521722793579
+  },
+  "linear_svm": {
+    "best_C": 0.25,
+    "cv_accuracy": 0.896319956469965,
+    "train_seconds": 3.3890013694763184
+  },
+  "multinomial_nb": {
+    "alpha": 1.0,
+    "train_seconds": 0.09592747688293457
+  },
+  "random_forest": {
+    "n_estimators": 100,
+    "criterion": "gini",
+    "max_depth": null,
+    "min_samples_split": 2,
+    "n_jobs": 2,
+    "random_state": 42,
+    "train_seconds": 72.38466715812683
+  },
+  "gradient_boosting": {
+    "n_estimators": 270,
+    "criterion": "squared_error",
+    "learning_rate": 0.1,
+    "min_samples_split": 2,
+    "random_state": 42,
+    "train_seconds": 476.70063638687134
+  },
+  "mlp_neural_net": {
+    "hidden_layer_sizes": [
+      30,
+      30,
+      20,
+      10,
+      10
+    ],
+    "activation": "logistic",
+    "alpha": 0.0001,
+    "early_stopping": true,
+    "solver": "adam",
+    "max_iter": 200,
+    "random_state": 42,
+    "train_seconds": 238.74716186523438,
+    "n_iter": 21,
+    "best_validation_score": 0.9128
+  }
+}

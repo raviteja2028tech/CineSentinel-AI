@@ -1,0 +1,56 @@
+{
+  "train": {
+    "rows": 25000,
+    "labels": {
+      "negative": 12500,
+      "positive": 12500
+    },
+    "duplicate_rows": 96,
+    "words_mean": 233.7872,
+    "words_median": 174.0,
+    "words_min": 10,
+    "words_max": 2470,
+    "words_by_label_mean": {
+      "negative": 230.86784,
+      "positive": 236.70656
+    }
+  },
+  "test": {
+    "rows": 25000,
+    "labels": {
+      "negative": 12500,
+      "positive": 12500
+    },
+    "duplicate_rows": 199,
+    "words_mean": 228.52668,
+    "words_median": 172.0,
+    "words_min": 4,
+    "words_max": 2278,
+    "words_by_label_mean": {
+      "negative": 228.06128,
+      "positive": 228.99208
+    }
+  },
+  "total_rows": 50000,
+  "cross_split_overlap": {
+    "test_rows_also_in_train": 123,
+    "share_of_test": 0.00492,
+    "label_conflicts": 0
+  },
+  "source": {
+    "official": "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz",
+    "downloaded_from": "https://huggingface.co/datasets/stanfordnlp/imdb",
+    "verified_against_official": true,
+    "note": "Downloaded from the HuggingFace mirror. Every (review, label) pair in both splits was compared with the official tarball and found identical."
+  },
+  "raw_files": {
+    "train.parquet": {
+      "bytes": 20979968,
+      "sha256": "db47d16b5c297cc0dd625e519c81319c24c9149e70e8496de5475f6fa928342c"
+    },
+    "test.parquet": {
+      "bytes": 20470363,
+      "sha256": "b52e26e2f872d282ffac460bf9770b25ac6f102cda0e6ca7158df98c94e8b3da"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Only needed to rebuild the report PDF and the presentation
+# (scripts\build_submission.py). Not needed to train, test or run the app.
+-r requirements.txt
+python-pptx==1.0.2
+Markdown==3.11

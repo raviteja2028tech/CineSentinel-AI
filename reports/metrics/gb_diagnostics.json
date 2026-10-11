@@ -1,0 +1,173 @@
+{
+  "description": "Gradient Boosting accuracy by number of trees, measured on an 80/20 fit/validation split of the TRAINING reviews. The test split is not used.",
+  "fit_rows": 20000,
+  "validation_rows": 5000,
+  "n_features": 50000,
+  "params": {
+    "criterion": "squared_error",
+    "learning_rate": 0.1,
+    "min_samples_split": 2,
+    "random_state": 42
+  },
+  "max_trees": 300,
+  "fit_seconds": 432.59534764289856,
+  "shuffled_label_control_accuracy": 0.5104,
+  "features_used": 839,
+  "selection_rule": "smallest n_estimators with validation accuracy within 0.002 of the best validation accuracy",
+  "best_validation_accuracy": 0.8338,
+  "selected_n_estimators": 270,
+  "selected_validation_accuracy": 0.8324,
+  "still_improving_at_max": true,
+  "stages": [
+    {
+      "n_estimators": 10,
+      "fit_accuracy": 0.70265,
+      "validation_accuracy": 0.6894
+    },
+    {
+      "n_estimators": 20,
+      "fit_accuracy": 0.7526,
+      "validation_accuracy": 0.7326
+    },
+    {
+      "n_estimators": 30,
+      "fit_accuracy": 0.7698,
+      "validation_accuracy": 0.7496
+    },
+    {
+      "n_estimators": 40,
+      "fit_accuracy": 0.78475,
+      "validation_accuracy": 0.7636
+    },
+    {
+      "n_estimators": 50,
+      "fit_accuracy": 0.797,
+      "validation_accuracy": 0.7754
+    },
+    {
+      "n_estimators": 60,
+      "fit_accuracy": 0.8067,
+      "validation_accuracy": 0.7824
+    },
+    {
+      "n_estimators": 70,
+      "fit_accuracy": 0.8167,
+      "validation_accuracy": 0.7906
+    },
+    {
+      "n_estimators": 80,
+      "fit_accuracy": 0.8229,
+      "validation_accuracy": 0.796
+    },
+    {
+      "n_estimators": 90,
+      "fit_accuracy": 0.8294,
+      "validation_accuracy": 0.7998
+    },
+    {
+      "n_estimators": 100,
+      "fit_accuracy": 0.83465,
+      "validation_accuracy": 0.8034
+    },
+    {
+      "n_estimators": 110,
+      "fit_accuracy": 0.84045,
+      "validation_accuracy": 0.8038
+    },
+    {
+      "n_estimators": 120,
+      "fit_accuracy": 0.84395,
+      "validation_accuracy": 0.809
+    },
+    {
+      "n_estimators": 130,
+      "fit_accuracy": 0.848,
+      "validation_accuracy": 0.8096
+    },
+    {
+      "n_estimators": 140,
+      "fit_accuracy": 0.8529,
+      "validation_accuracy": 0.8116
+    },
+    {
+      "n_estimators": 150,
+      "fit_accuracy": 0.85435,
+      "validation_accuracy": 0.8132
+    },
+    {
+      "n_estimators": 160,
+      "fit_accuracy": 0.85825,
+      "validation_accuracy": 0.8182
+    },
+    {
+      "n_estimators": 170,
+      "fit_accuracy": 0.86085,
+      "validation_accuracy": 0.8214
+    },
+    {
+      "n_estimators": 180,
+      "fit_accuracy": 0.8641,
+      "validation_accuracy": 0.8224
+    },
+    {
+      "n_estimators": 190,
+      "fit_accuracy": 0.8678,
+      "validation_accuracy": 0.8232
+    },
+    {
+      "n_estimators": 200,
+      "fit_accuracy": 0.86925,
+      "validation_accuracy": 0.8234
+    },
+    {
+      "n_estimators": 210,
+      "fit_accuracy": 0.8723,
+      "validation_accuracy": 0.8248
+    },
+    {
+      "n_estimators": 220,
+      "fit_accuracy": 0.87575,
+      "validation_accuracy": 0.8252
+    },
+    {
+      "n_estimators": 230,
+      "fit_accuracy": 0.8782,
+      "validation_accuracy": 0.8278
+    },
+    {
+      "n_estimators": 240,
+      "fit_accuracy": 0.8805,
+      "validation_accuracy": 0.8298
+    },
+    {
+      "n_estimators": 250,
+      "fit_accuracy": 0.8831,
+      "validation_accuracy": 0.83
+    },
+    {
+      "n_estimators": 260,
+      "fit_accuracy": 0.88605,
+      "validation_accuracy": 0.8314
+    },
+    {
+      "n_estimators": 270,
+      "fit_accuracy": 0.88765,
+      "validation_accuracy": 0.8324
+    },
+    {
+      "n_estimators": 280,
+      "fit_accuracy": 0.8895,
+      "validation_accuracy": 0.8334
+    },
+    {
+      "n_estimators": 290,
+      "fit_accuracy": 0.891,
+      "validation_accuracy": 0.8338
+    },
+    {
+      "n_estimators": 300,
+      "fit_accuracy": 0.8936,
+      "validation_accuracy": 0.8338
+    }
+  ]
+}

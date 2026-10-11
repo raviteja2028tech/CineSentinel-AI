@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# CineSentinel AI - what stays out of git
+# ---------------------------------------------------------------------------
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python caches and build leftovers
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# Dataset: about 210 MB, downloaded by scripts/download_data.py and rebuilt
+# by scripts/build_dataset.py. Never committed.
+data/
+
+# NLTK corpora: downloaded automatically on first run
+nltk_data/
+
+# Trained models ARE committed (the six classifiers, the vectorizer and the
+# 100-tree reference model; about 56 MB, largest file 35 MB) so the app runs
+# straight after cloning. To leave them out instead, uncomment the next line
+# and regenerate them with `python -m cinesentinel.train`.
+# models/*.joblib
+
+# Review-only screenshots from `scripts/capture_screenshots.py --all`
+submission/screenshots/*_full.png
+submission/screenshots/comparison_*.png
+
+# Secrets and local environment files
+.env
+.env.*
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+~$*
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
