@@ -35,6 +35,9 @@ nltk_data/
 submission/screenshots/*_full.png
 submission/screenshots/comparison_*.png
 
+# Local working notes, not part of the submission
+SESSION.md
+
 # Secrets and local environment files
 .env
 .env.*
